@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Review Carousel App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+  <div id="feedback-form" class="container">
+    <!-- Review form -->
+    <form id="reviewForm">
+      <div class="form-group">
+        <h3 class="testimonials text-center mt-2 mb-2">Welcome!</h3>
+        <label for="reviewerName">Your Name:</label>
+        <input type="text" class="form-control" id="reviewerName" required>
+      </div>
+      <div class="form-group">
+        <label for="reviewText">Your Review:</label>
+        <textarea class="form-control" id="reviewText" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <select class="form-control" id="rating" required>
+          <option value="1">1 Star</option>
+          <option value="2">2 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="5">5 Stars</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Submit Review</button>
+    </form>
+
+    <h3 class="testimonials text-center mt-4 mb-5">Client Testimonials</h3>
+    <p class="client-p">
+      "Discover the impact we've made and share your insights to drive our continuous improvement."</p>
+    <!-- Review carousel -->
+    <div class="mt-4 carousel-container">
+      <div id="reviewCarousel" class="carousel slide" data-ride="carousel" data-interval="3000"
+        aria-label="Review Carousel">
+        <div class="carousel-inner" aria-live="polite">
+          <!-- Hardcoded reviews -->
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-heart reviewer-icon" alt="Reviewer Icon"></i>
+                <h5 class="card-title">Grace</h5>
+                <p class="card-text">"Home Away From Home truly lives up to its name. My mother has found a loving and
+                  nurturing environment here. The staff goes above and beyond, making her feel cherished and safe. I
+                  couldn't have chosen a better place for her."</p>
+                <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-smile reviewer-icon" alt="Reviewer Icon"></i>
+                <h5 class="card-title">Robert</h5>
+                <p class="card-text">"I am incredibly grateful for the care my grandfather receives at Home Away From
+                  Home. The dedication and compassion of the staff are unmatched. Knowing he is in such capable hands
+                  gives my family peace of mind."</p>
+                <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-thumbs-up reviewer-icon" alt="Reviewer Icon"></i>
+                <h5 class="card-title">Fetene</h5>
+                <p class="card-text">"Home Away From Home has been a blessing for my family. The facility is
+                  well-maintained, and the personalized care plans make all the difference... The staff's kindness and
+                  patience create a warm atmosphere that truly feels like home."</p>
+                <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-check-circle reviewer-icon" alt="Reviewer Icon"></i>
+                <h5 class="card-title">Emily</h5>
+                <p class="card-text">"I can't thank Home Away From Home enough for the wonderful care they provide to my
+                  aunt. The staff treats her like family, and she's made friends among the residents. The facility's
+                  attention to detail and personalized care plans make all the difference."</p>
+                <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+              </div>
+            </div>
+          </div>
+          <!-- Dynamic reviews will be added here -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+
+</html>
