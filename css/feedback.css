@@ -1,7 +1,13 @@
-
+.container{
+  /* background-color: #01b0f8; */
+  height: 100vh;
+  width: 100%;
+  margin-top: -100px;
+ }
  .carousel-container {
     width: 60%;
     margin: 0 auto;
+    /* background-color: red; */
   }
   #reviewForm{
     margin-top: 0px;
@@ -30,13 +36,15 @@
   .card {
     background: #dbd4c742;
     box-shadow: 0 8px 30px -7px #c9dff0;
-    margin: 0 20px;
+    margin: 30px 20px;
     padding:0 34px 35px;
     border-radius: 5px;
     border: 0;
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
     box-shadow: inset 0 0 20px #333;
+    max-width: 700px;
+    background-color: red;
   }
   .card-title {
     color: #01b0f8;
@@ -58,23 +66,25 @@
     color: rgb(243, 102, 21);
   }
   #feedback-form {
+  
     width: 80%;
-    margin: 0 auto;
-    background-color: #fcfcfc;
+    height: 60%;
+    margin: 60px auto;
+    /* background-color: #fcfcfc; */
     padding: 20px 50px 40px;
     box-shadow: 1px 4px 10px 1px #aaa;
     font-family: sans-serif;
    
   }
-  #feedback-form * {
+   #feedback-form * {
     box-sizing: border-box;
   }
-  #feedback-form h2 {
+   #feedback-form h2 {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+  } 
   #feedback-form input {
     margin-bottom: 15px;
   }
@@ -94,6 +104,7 @@
     background: linear-gradient(to right, #207cca 0%,#9f58a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 ); /* IE6-9 */
   }
+
   .testimonials {
     font-family: 'Passion One', cursive;
     font-size: 45px;
@@ -102,12 +113,14 @@
     color: -webkit-linear-gradient(left, #207cca 0%,#9f58a3 100%); /* Chrome10-25,Safari5.1-6 */
     color: linear-gradient(to right, #207cca 0%,#9f58a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 ); /* IE6-9 */
-    /* margin-top: 20px; */
+    margin-top: 120px;
   }
   .client-p {
     color: #2797e2;
     font-family: 'passion One,', cursive;
     text-align: center;
     font-size: 18px;
-    margin-top: -30px;
+    margin-top: 20px;
   }
+
+  
